@@ -9,7 +9,7 @@ def compute_sqrt(n):
     # Attempting to use the babylonian method going for a log n implementation
     if n <= 0:
         return 0  # Error?
-    r1 = n / 2 # Guess, Babylonian step 1
+    r1 = n / 2  # Guess, Babylonian step 1
     while r1*r1 > n:  # Still Too big
             r1 /= 2
     while r1*r1 < n:  # Too small
@@ -18,8 +18,8 @@ def compute_sqrt(n):
         else:  # If not then we're close enough at this point
             break
 
-    while True: # Repeat Step 2 until it's precise
-        oldr1 = r1 # Save old r1
+    while True:  # Repeat Step 2 until it's precise
+        oldr1 = r1  # Save old r1
         if (r1*r1) != n:  # This *can* produce imprecise comparison...
                             # #If r1*r1 is 159.99999999999997 and n is 160, will return False
 
@@ -28,8 +28,8 @@ def compute_sqrt(n):
             break
         if oldr1 == r1:  # Using caution to prevent infinite loop
             break
-
-    return r1
+    result = r1  # For clarity of anyone reading... Unnecessary. But there you go!
+    return result
 
 
 
