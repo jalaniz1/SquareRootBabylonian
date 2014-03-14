@@ -1,4 +1,4 @@
-import math
+#import math
 
 __author__ = 'frankdrevin'
 def compute_sqrt(n):
@@ -34,6 +34,6 @@ def compute_sqrt(n):
 
 n = 160
 # For comparison between my square root and the python library square root
-print("Python Math Library %d" % math.sqrt(n))
+# print("Python Math Library %d" % math.sqrt(n))
 print("My function %d" % compute_sqrt(n))
 
