@@ -19,10 +19,9 @@ def compute_sqrt(n):
             break
 
     while True:  # Repeat Step 2 until it's precise
-        oldr1 = r1  # Save old r1
+        oldr1 = r1  # Save
         if (r1*r1) != n:  # This *can* produce imprecise comparison...
-                            # #If r1*r1 is 159.99999999999997 and n is 160, will return False
-
+                          # If r1*r1 is 159.99999999999997 and n is 160, will return False
             r1 = (r1 + n/r1)/2  # Babylonian step 2
         else:  # We found our match!
             break
