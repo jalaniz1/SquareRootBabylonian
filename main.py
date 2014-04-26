@@ -1,6 +1,6 @@
 #import math
 
-__author__ = 'frankdrevin'
+__author__ = 'jalaniz'
 def compute_sqrt(n):
     "Computer Square root *without* math library functions"
 
